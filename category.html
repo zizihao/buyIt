@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>拼叉叉</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/category.css">
+    <script src="./js/library/flexible.js"></script>
+    <script src="./js/library/jquery-1.12.4.min.js"></script>
+    <script src="./js/library/template-web.js"></script>
+    <script type="text/html" id="tabChoose">
+        {{each $data item index}}
+        <div class="main-left-list" onclick="getGoodsContent({{index}})">
+            <p {{if index === 0}}class="main-left-checked"{{/if}}>{{item.cat_name}}</p>
+        </div>
+        {{/each}}
+    </script>
+    <script type="text/html" id="contentChoose">
+        {{each $data item index}}
+            {{if $imports.index === index}}
+                {{each item.children item2}}
+                <div class="main-right-header">
+                    <p>/ {{item2.cat_name}}</p>
+                </div>
+                    <div class="main-right-content">
+                        {{each item2.children item3}}
+                        <div class="main-content-box">
+                            <a href="">
+                                <img src="{{item3.cat_icon}}"     alt="">
+                                {{item3.cat_name}}
+                            </a>
+                        </div> 
+                        {{/each}}
+                    </div>
+                {{/each}}
+            {{/if}}
+        {{/each}}
+    </script>
+    <script src="./js/category.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <p>商品分类</p>
+        </div>
+        <div class="header-bottom">
+            <input type="search" id="" placeholder="搜索">
+        </div>
+    </header>
+    <div class="main">
+        <div class="main-left">
+
+        </div>
+        <div class="main-right">
+        </div>
+    </div>
+    <nav>
+        <div class="nav-box nav-checked">
+            <a href="./index.html">
+                <img src="./upload/index.png" alt="">
+                首页
+            </a>
+        </div>
+        <div class="nav-box">
+            <a href="" class="nav-checked">
+                <img src="./upload/category_selected.png" alt="">
+                分类
+            </a>
+        </div>
+        <div class="nav-box">
+            <a href="">
+                <img src="./upload/cart.png" alt="">
+                购物车
+            </a>
+        </div>
+        <div class="nav-box">
+            <a href="">
+                <img src="./upload/user.png" alt="">
+                我的
+            </a>
+        </div>
+    </nav>
+
+</body>
+
+</html>

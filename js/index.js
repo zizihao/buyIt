@@ -1,5 +1,5 @@
 // 渲染轮播图
-function bannerAjax() {
+function getBanner() {
     $.get('https://api-hmugo-web.itheima.net/api/public/v1/home/swiperdata', (res) => {
         const templateHtml = template('bannerMain', res.message)
         $('.swiper-wrapper').html(templateHtml)
@@ -19,7 +19,7 @@ function bannerInit() {
 }
 
 // 渲染分类
-function categoryAjax() {
+function getCategory() {
     $.get('https://api-hmugo-web.itheima.net/api/public/v1/home/catitems', (res) => {
         const templateHtml = template('categoryMain', res.message)
         $('.category').html(templateHtml)
@@ -27,7 +27,7 @@ function categoryAjax() {
 }
 
 // 渲染精选
-function choicenessAjax() {
+function getChoiceness() {
     $.get('https://api-hmugo-web.itheima.net/api/public/v1/home/floordata', (res) => {
         console.log(res);
         const templateHtml = template('choicenessMain', res.message)
@@ -36,7 +36,7 @@ function choicenessAjax() {
 }
 
 $(function () {
-    bannerAjax()
-    categoryAjax()
-    choicenessAjax()
+    getBanner()
+    getCategory()
+    getChoiceness()
 })

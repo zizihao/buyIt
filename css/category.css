@@ -1,0 +1,66 @@
+html,
+body {
+  height: 100%;
+}
+.main {
+  display: flex;
+  margin-bottom: 1.506667rem;
+}
+.main .main-left {
+  overflow: auto;
+  width: 2.426667rem;
+  height: 11.466667rem;
+  background-color: #F3F3F3;
+}
+.main .main-left .main-left-list {
+  text-align: center;
+  padding: 0.24rem 0;
+  color: #585858;
+}
+.main .main-left .main-left-list p {
+  height: 0.586667rem;
+  line-height: 0.586667rem;
+  font-size: 0.346667rem;
+  font-weight: 700;
+}
+.main .main-left .main-left-list .main-left-checked {
+  border-left: 2px solid #EA4350;
+  color: #EA4350;
+}
+.main .main-right {
+  overflow: auto;
+  height: 11.466667rem;
+  width: 7.573333rem;
+  font-size: 0.346667rem;
+  color: #575757;
+}
+.main .main-right .main-right-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.133333rem 0;
+}
+.main .main-right .main-right-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.main .main-right .main-right-content .main-content-box {
+  height: 2.266667rem;
+  width: 33.33%;
+  margin: 0.08rem 0;
+}
+.main .main-right .main-right-content .main-content-box a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  color: #2E2E2E;
+  font-weight: 700;
+}
+.main .main-right .main-right-content .main-content-box a img {
+  width: 1.6rem;
+  height: 1.6rem;
+}

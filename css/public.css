@@ -25,6 +25,7 @@ header .header-bottom input {
   width: 9.333333rem;
   height: 1.066667rem;
   font-size: 0.346667rem;
+  font-weight: 700;
 }
 nav {
   position: fixed;
@@ -51,6 +52,7 @@ nav .nav-box a {
   height: 100%;
   font-size: 0.346667rem;
   color: #8C8D8D;
+  font-weight: 700;
 }
 nav .nav-box a img {
   width: 0.64rem;
