@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>拼叉叉</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/goodsList.css">
+    <script src="./js/library/flexible.js"></script>
+    <script src="./js/library/jquery-1.12.4.min.js"></script>
+    <script src="./js/library/template-web.js"></script>
+    <script type="text/html" id="goodsContent">
+        {{each $data item}}
+        <a href="" class="main-list">
+            <img src="{{item.goods_small_logo}}" alt="">
+            <h4>{{item.goods_name}}</h4>
+            <p><span>￥</span>{{item.goods_price}}</p>
+        </a>
+        {{/each}}
+    </script>
+    <script src="./js/goodsList.js"></script>
+
+</head>
+
+<body>
+    <div class="header-fixed">
+        <header>
+            <div class="header-esc"></div>
+            <div class="header-top">
+                <p>商品列表</p>
+            </div>
+            <div class="header-bottom">
+                <input type="search" id="" placeholder="搜索">
+            </div>
+        </header>
+    </div>
+    <div class="tab-fixed">
+        <div class="tab">
+            <div class="tab-content tab-checked">综合</div>
+            <div class="tab-content">销量</div>
+            <div class="tab-content">价格</div>
+        </div>
+    </div>
+    <div class="main">
+
+    </div>
+    <div class="nav-fixed">
+        <nav>
+            <div class="nav-box ">
+                <a href="./index.html">
+                    <img src="./upload/index.png" alt="">
+                    首页
+                </a>
+            </div>
+            <div class="nav-box">
+                <a href="./category.html" class="nav-checked">
+                    <img src="./upload/category_selected.png" alt="">
+                    分类
+                </a>
+            </div>
+            <div class="nav-box">
+                <a href="">
+                    <img src="./upload/cart.png" alt="">
+                    购物车
+                </a>
+            </div>
+            <div class="nav-box">
+                <a href="">
+                    <img src="./upload/user.png" alt="">
+                    我的
+                </a>
+            </div>
+        </nav>
+    </div>
+
+</body>
+
+</html>

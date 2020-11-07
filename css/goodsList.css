@@ -1,0 +1,69 @@
+.tab-fixed {
+  position: relative;
+  height: 1.173333rem;
+}
+.tab-fixed .tab {
+  position: fixed;
+  display: flex;
+  justify-content: space-evenly;
+  width: 10rem;
+  background-color: #fff;
+  z-index: 999;
+  font-size: 0.373333rem;
+}
+.tab-fixed .tab .tab-content {
+  text-align: center;
+  height: 100%;
+  line-height: 1.173333rem;
+  width: 2.666667rem;
+  font-weight: 700;
+  color: #676767;
+}
+.tab-fixed .tab .tab-checked {
+  color: #3D3D3D;
+  border-bottom: 0.04rem solid #EA4350;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10rem;
+}
+.main .main-list {
+  position: relative;
+  padding-top: 0.146667rem;
+  padding-left: 0.12rem;
+  height: 2.786667rem;
+  width: 9.306667rem;
+  margin: 0.173333rem 0;
+}
+.main .main-list img {
+  float: left;
+  width: 2.546667rem;
+  height: 2.546667rem;
+  margin-right: 0.4rem;
+}
+.main .main-list h4 {
+  font-size: 0.346667rem;
+  margin-top: 0.066667rem;
+  color: #434343;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* 弹性伸缩盒子模型显示 */
+  display: -webkit-box;
+  /* 限制在一个块元素显示的文本的行数 */
+  -webkit-line-clamp: 2;
+  /* 设置或检索伸缩盒对象的子元素的排列方式 */
+  -webkit-box-orient: vertical;
+}
+.main .main-list p {
+  position: absolute;
+  color: #EA4350;
+  font-size: 0.346667rem;
+  bottom: 0.133333rem;
+  left: 3.066667rem;
+}
+.main .main-list p span {
+  font-size: 0.266667rem;
+  font-weight: 700;
+}
