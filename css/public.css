@@ -1,9 +1,16 @@
-header {
+.header-fixed {
+  width: 10rem;
+  height: 2.933333rem;
+  position: relative;
+}
+.header-fixed header {
+  position: fixed;
   width: 10rem;
   height: 2.933333rem;
   background-color: #EA4350;
+  z-index: 999;
 }
-header .header-top {
+.header-fixed header .header-top {
   display: flex;
   padding-top: 0.6rem;
   justify-content: center;
@@ -14,20 +21,25 @@ header .header-top {
   font-weight: 600;
   color: #fff;
 }
-header .header-bottom {
+.header-fixed header .header-bottom {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 1.6rem;
 }
-header .header-bottom input {
+.header-fixed header .header-bottom input {
   text-align: center;
   width: 9.333333rem;
   height: 1.066667rem;
   font-size: 0.346667rem;
   font-weight: 700;
 }
-nav {
+.nav-fixed {
+  position: relative;
+  width: 10rem;
+  height: 1.64rem;
+}
+.nav-fixed nav {
   position: fixed;
   bottom: 0;
   display: flex;
@@ -39,11 +51,11 @@ nav {
   box-shadow: 4px 5px 15px #888888;
   background-color: #fafafa;
 }
-nav .nav-box {
+.nav-fixed nav .nav-box {
   height: 1.333333rem;
   width: 1.733333rem;
 }
-nav .nav-box a {
+.nav-fixed nav .nav-box a {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -54,10 +66,10 @@ nav .nav-box a {
   color: #8C8D8D;
   font-weight: 700;
 }
-nav .nav-box a img {
+.nav-fixed nav .nav-box a img {
   width: 0.64rem;
   height: 0.64rem;
 }
-nav .nav-box .nav-checked {
+.nav-fixed nav .nav-box .nav-checked {
   color: #E03440;
 }
