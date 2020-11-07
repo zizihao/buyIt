@@ -6,7 +6,6 @@
 .header-fixed header {
   position: fixed;
   width: 10rem;
-  height: 2.933333rem;
   background-color: #EA4350;
   z-index: 999;
 }
