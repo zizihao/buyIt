@@ -3,11 +3,110 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>拼叉叉</title>
+    <link rel="stylesheet" href="./js/library/swiper/swiper.min.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/library/flexible.js"></script>
+    <script src="./js/library/jquery-1.12.4.min.js"></script>
+    <script src="./js/library/swiper/swiper.min.js"></script>
+    <script src="./js/library/template-web.js"></script>
+    <!-- 轮播图 -->
+    <script type="text/html" id="bannerMain">
+        {{each $data item}}
+        <div class="swiper-slide"><a href=""><img src="{{item.image_src}}" alt=""></a></div>
+        {{/each}}
+    </script>
+    <!-- 分类 -->
+    <script type="text/html" id="categoryMain">
+        {{each $data item}}
+        <div class="category-box">
+            <a href=""><img src="{{item.image_src}}" alt=""></a>
+        </div>
+        {{/each}}
+    </script>
+    <!-- 精选 -->
+    <script type="text/html" id="choicenessMain">
+        {{each $data item}}
+        <div class="choiceness">
+        <div class="explain">
+            <img src="{{item.floor_title.image_src}}" alt="">
+        </div>
+        <div class="choiceness-left">
+            <a href=""><img src="{{item.product_list[0].image_src}}" alt=""></a>
+        </div>
+        
+        <div class="choiceness-right">
+            <div class="choiceness-img">
+                <a href=""><img src="{{item.product_list[1].image_src}}" alt=""></a>
+            </div>
+            <div class="choiceness-img">
+                <a href=""><img src="{{item.product_list[2].image_src}}" alt=""></a>
+            </div>
+            <div class="choiceness-img">
+                <a href=""><img src="{{item.product_list[3].image_src}}" alt=""></a>
+            </div>
+            <div class="choiceness-img">
+                <a href=""><img src="{{item.product_list[4].image_src}}" alt=""></a>
+            </div>
+        </div>
+        <div class="clear"></div>
+        </div>
+        {{/each}}
+    </script>
+    <script src="./js/index.js"></script>
 </head>
 
 <body>
+    <header>
+        <div class="header-top">
+            <p>拼叉叉</p>
+        </div>
+        <div class="header-bottom">
+            <input type="search" id="" placeholder="搜索">
+        </div>
+    </header>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="category">
+    </div>
+
+    <div class="floor">
+    </div>
+
+    <nav>
+        <div class="nav-box nav-checked">
+            <a href="" class="nav-checked">
+                <img src="./upload/index_selected.png" alt="">
+                首页
+            </a>
+        </div>
+        <div class="nav-box">
+            <a href="">
+                <img src="./upload/category.png" alt="">
+                分类
+            </a>
+        </div>
+        <div class="nav-box">
+            <a href="">
+                <img src="./upload/cart.png" alt="">
+                购物车
+            </a>
+        </div>
+        <div class="nav-box">
+            <a href="">
+                <img src="./upload/user.png" alt="">
+                我的
+            </a>
+        </div>
+    </nav>
 
 </body>
 
