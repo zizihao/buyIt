@@ -14,13 +14,14 @@
     <script src="./js/library/template-web.js"></script>
     <script type="text/html" id="goodsContent">
         {{each $data item}}
-        <a href="" class="main-list">
+        <a href="./goodsDetails.html?goods_id={{item.goods_id}}" class="main-list">
             <img src="{{item.goods_small_logo}}" alt="">
             <h4>{{item.goods_name}}</h4>
             <p><span>￥</span>{{item.goods_price}}</p>
         </a>
         {{/each}}
     </script>
+    <script src="./js/public.js"></script>
     <script src="./js/goodsList.js"></script>
 
 </head>
@@ -28,12 +29,12 @@
 <body>
     <div class="header-fixed">
         <header>
-            <div class="header-esc"></div>
+            <div class="header-esc" onclick="rollbackOut()"></div>
             <div class="header-top">
                 <p>商品列表</p>
             </div>
             <div class="header-bottom">
-                <div class="search"></div>
+                <div class="search" onclick="searchJump()"></div>
             </div>
         </header>
     </div>

@@ -14,12 +14,12 @@
     <script src="./js/library/template-web.js"></script>
     <script type="text/html" id="searchCentre">
         {{each $data item}}
-        <div class="main-box">
+        <a href="./goodsDetails.html?goods_id={{item.goods_id}}" class="main-box">
             <div class="main-box-img">
                 <img src="{{item.goods_small_logo}}" alt="">
             </div>
             <h4>{{item.goods_name}}</h4>
-        </div>
+        </a>
         {{/each}}
     </script>
     <script src="./js/public.js"></script>
@@ -30,13 +30,13 @@
 <body>
     <div class="header-fixed">
         <header>
-            <div class="header-esc"></div>
+            <div class="header-esc" onclick="rollbackOut()"></div>
             <div class="header-top">
-                <p>商品分类</p>
+                <p>搜索中心</p>
             </div>
             <div class="header-bottom fff">
                 <input type="" name="" id="" placeholder="输入商品名">
-                <div class="searchBtn">搜索</div>
+                <div class="searchBtn" onclick="getSearchData()">搜索</div>
             </div>
         </header>
     </div>

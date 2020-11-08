@@ -17,14 +17,14 @@
     <!-- 轮播图 -->
     <script type="text/html" id="bannerMain">
         {{each $data item}}
-        <div class="swiper-slide"><a href=""><img src="{{item.image_src}}" alt=""></a></div>
+        <div class="swiper-slide"><a href="./goodsList.html?query={{item.new}}"><img src="{{item.image_src}}" alt=""></a></div>
         {{/each}}
     </script>
     <!-- 分类 -->
     <script type="text/html" id="categoryMain">
         {{each $data item}}
         <div class="category-box">
-            <a href=""><img src="{{item.image_src}}" alt=""></a>
+            <a href="{{item.new}}"><img src="{{item.image_src}}" alt=""></a>
         </div>
         {{/each}}
     </script>
@@ -40,23 +40,20 @@
         </div>
         
         <div class="choiceness-right">
+            {{each item.product_list item2 index}}
+            {{if index === 0}}
+            {{else}}
             <div class="choiceness-img">
-                <a href=""><img src="{{item.product_list[1].image_src}}" alt=""></a>
+                <a href=""><img src="{{item2.image_src}}" alt=""></a>
             </div>
-            <div class="choiceness-img">
-                <a href=""><img src="{{item.product_list[2].image_src}}" alt=""></a>
-            </div>
-            <div class="choiceness-img">
-                <a href=""><img src="{{item.product_list[3].image_src}}" alt=""></a>
-            </div>
-            <div class="choiceness-img">
-                <a href=""><img src="{{item.product_list[4].image_src}}" alt=""></a>
-            </div>
+            {{/if}}
+            {{/each}}
         </div>
         <div class="clear"></div>
         </div>
         {{/each}}
     </script>
+    <script src="./js/public.js"></script>
     <script src="./js/index.js"></script>
 </head>
 
@@ -67,7 +64,7 @@
                 <p>拼叉叉</p>
             </div>
             <div class="header-bottom">
-                <div class="search"></div>
+                <div class="search" onclick="searchJump()"></div>
             </div>
         </header>
     </div>

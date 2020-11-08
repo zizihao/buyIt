@@ -13,6 +13,7 @@
   position: absolute;
   top: 0.706667rem;
   left: 0.6rem;
+  z-index: 9999;
   width: 0.333333rem;
   height: 0.333333rem;
   border-left: 0.04rem solid #fff;

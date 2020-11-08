@@ -31,6 +31,7 @@
 }
 .floor .choiceness {
   width: 10rem;
+  margin-top: 0.266667rem;
 }
 .floor .choiceness .explain {
   margin-bottom: 0.133333rem;

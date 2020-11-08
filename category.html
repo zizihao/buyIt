@@ -29,7 +29,7 @@
                     <div class="main-right-content">
                         {{each item2.children item3}}
                         <div class="main-content-box">
-                            <a href="">
+                            <a href="./goodsList.html?query={{item3.cat_name}}">
                                 <img src="{{item3.cat_icon}}"     alt="">
                                 {{item3.cat_name}}
                             </a>
@@ -40,6 +40,7 @@
             {{/if}}
         {{/each}}
     </script>
+    <script src="./js/public.js"></script>
     <script src="./js/category.js"></script>
 </head>
 
@@ -50,7 +51,7 @@
                 <p>商品分类</p>
             </div>
             <div class="header-bottom">
-                <div class="search"></div>
+                <div class="search" onclick="searchJump()"></div>
             </div>
         </header>
     </div>
