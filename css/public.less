@@ -28,8 +28,8 @@
             align-items: center;
             position: relative;
             height: 1.333333rem;
-            font-size: 0.36rem;
-            font-weight: 600;
+            font-size: 0.4rem;
+            font-weight: 700;
             color: #fff;
         }
 
@@ -39,13 +39,51 @@
             align-items: center;
             height: 1.6rem;
 
-            input {
-                text-align: center;
+
+
+            .search {
+                position: relative;
                 width: 9.333333rem;
                 height: 1.066667rem;
+                background-color: #fff;
+
+                &::before {
+                    position: absolute;
+                    top: 0.253333rem;
+                    left: 4.186667rem;
+                    content: "搜索";
+                    color: #767676;
+                    font-size: 0.4rem;
+                    font-weight: 700;
+                }
+            }
+
+            input {
+                width: 7.986667rem;
+                height: 0.813333rem;
+                border-radius: 0.4rem;
+                text-indent: 0.533333rem;
                 font-size: 0.346667rem;
                 font-weight: 700;
+                margin-right: 0.2rem;
+                background-color: #e7e7e7;
             }
+
+            .searchBtn {
+                text-align: center;
+                width: 1.346667rem;
+                height: 0.813333rem;
+                line-height: 0.813333rem;
+                font-size: 0.346667rem;
+                font-weight: 700;
+                border-radius: 0.066667rem;
+                color: #fff;
+                background-color: #ea4350;
+            }
+        }
+
+        .fff {
+            background-color: #fff;
         }
     }
 }
