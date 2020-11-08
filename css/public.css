@@ -82,3 +82,47 @@
 .nav-fixed nav .nav-box .nav-checked {
   color: #E03440;
 }
+.car-fixed {
+  position: relative;
+  width: 10rem;
+  height: 1.253333rem;
+  background-color: #fff;
+}
+.car-fixed .car {
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  padding: 0 0.133333rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 10rem;
+  height: 1.253333rem;
+  box-shadow: 4px 5px 15px #888888;
+  background-color: #fff;
+}
+.car-fixed .car .car-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 1.333333rem;
+  font-size: 0.32rem;
+}
+.car-fixed .car .car-box span {
+  font-size: 0.6rem;
+}
+.car-fixed .car .car-btn {
+  width: 2.613333rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  text-align: center;
+  border-radius: 0.4rem;
+  color: #fff;
+  background-color: #fcaa23;
+  font-size: 0.373333rem;
+}
+.car-fixed .car .red {
+  background-color: #ea4350;
+}
